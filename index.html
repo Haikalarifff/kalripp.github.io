@@ -15,19 +15,25 @@
         }
         .container {
             text-align: center;
+            position: relative;
         }
         .circle {
             width: 100px;
             height: 100px;
-            background-color: gray;
+            background-color: #708090; /* Warna abu-abu */
             border-radius: 50%;
-            margin: 0 auto;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
         }
         .rectangle {
             width: 300px;
             height: 50px;
-            background-color: gray;
-            margin: 20px auto;
+            background-color: #708090; /* Warna abu-abu */
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .small-circles {
             display: flex;
@@ -38,13 +44,13 @@
         .small-circle {
             width: 30px;
             height: 30px;
-            background-color: gray;
+            background-color: #708090; /* Warna abu-abu */
             border-radius: 50%;
         }
         .small-rectangle {
             width: 80px;
             height: 20px;
-            background-color: gray;
+            background-color: #708090; /* Warna abu-abu */
             margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
@@ -54,23 +60,24 @@
 <body>
 
     <div class="container">
-        <!-- Large Circle -->
+        <!-- Circle Above Rectangle -->
         <div class="circle"></div>
 
         <!-- Large Rectangle -->
         <div class="rectangle"></div>
 
-        <!-- Three Small Circles -->
+        <!-- Three Small Circles Below Rectangle -->
         <div class="small-circles">
             <div class="small-circle"></div>
             <div class="small-circle"></div>
             <div class="small-circle"></div>
         </div>
 
-        <!-- Small Rectangle -->
+        <!-- Small Rectangle on the Right -->
         <div class="small-rectangle"></div>
     </div>
 
 </body>
 </html>
+
 
