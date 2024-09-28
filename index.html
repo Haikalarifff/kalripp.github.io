@@ -3,79 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometric Design</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Muhammad Haikal Arif</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
+            background-color: #9dff79a6;
         }
+
         .container {
             text-align: center;
-            position: relative;
         }
-        .circle {
-            width: 100px;
+
+        .profile-img {
+            border-radius: 50%;
             height: 100px;
-            background-color: #708090; /* Warna abu-abu */
-            border-radius: 50%;
-            position: absolute;
-            top: -60px;
-            left: 50%;
-            transform: translateX(-50%);
+            width: 100px;
+            margin-bottom: 10px;
         }
-        .rectangle {
-            width: 300px;
-            height: 50px;
-            background-color: #708090; /* Warna abu-abu */
-            margin-top: 50px;
-            margin-left: auto;
-            margin-right: auto;
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
         }
-        .small-circles {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
+
+        .subtitle {
+            margin-top: 5px;
+            font-size: 1.2rem;
+            color: #555;
         }
-        .small-circle {
-            width: 30px;
-            height: 30px;
-            background-color: #708090; /* Warna abu-abu */
-            border-radius: 50%;
-        }
-        .small-rectangle {
-            width: 80px;
-            height: 20px;
-            background-color: #708090; /* Warna abu-abu */
+
+        .social-icons {
             margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #000;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #555;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Circle Above Rectangle -->
-        <div class="circle"></div>
+        <img src="kotakhaikal.jpg" alt="Profile Image" class="profile-img" width="120">
+        <h1>Muhammad Haikal Arif</h1>
+        <h2>1202220391</h2>
+        <h3>S1 Sistem Informasi</h3>
+        
+        <div class="social-icons">
+            <a href="https://www.instagram.com/_haikalarif_/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/Haikalarifff"><i class="fab fa-github"></i></a>
+            
+            <div class="date-time">
+                <p><span id="datetime"></span></p>
+            </div>
 
-        <!-- Large Rectangle -->
-        <div class="rectangle"></div>
-
-        <!-- Three Small Circles Below Rectangle -->
-        <div class="small-circles">
-            <div class="small-circle"></div>
-            <div class="small-circle"></div>
-            <div class="small-circle"></div>
         </div>
-
-        <!-- Small Rectangle on the Right -->
-        <div class="small-rectangle"></div>
     </div>
+
+    
+
+    <script>
+        function updateDateTime() {
+            var now = new Date();
+            var datetime = now.toLocaleString();
+            document.getElementById('datetime').textContent = datetime;
+        }
+        setInterval(updateDateTime, 1000); // Update every second
+        updateDateTime(); // Initial call
+    </script>
 
 </body>
 </html>
