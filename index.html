@@ -1,10 +1,76 @@
-<html>
-    <head>
-        <title>Muhammad Haikal Arif</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Design</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .rectangle {
+            width: 300px;
+            height: 50px;
+            background-color: gray;
+            margin: 20px auto;
+        }
+        .small-circles {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .small-circle {
+            width: 30px;
+            height: 30px;
+            background-color: gray;
+            border-radius: 50%;
+        }
+        .small-rectangle {
+            width: 80px;
+            height: 20px;
+            background-color: gray;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
 <body>
-    <h2>Muhammad Haikal Arif</h2>
-    <h2>1202220391</h2>
-    <h2>Sistem Informasi</h2>
+
+    <div class="container">
+        <!-- Large Circle -->
+        <div class="circle"></div>
+
+        <!-- Large Rectangle -->
+        <div class="rectangle"></div>
+
+        <!-- Three Small Circles -->
+        <div class="small-circles">
+            <div class="small-circle"></div>
+            <div class="small-circle"></div>
+            <div class="small-circle"></div>
+        </div>
+
+        <!-- Small Rectangle -->
+        <div class="small-rectangle"></div>
+    </div>
+
 </body>
 </html>
+
